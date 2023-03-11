@@ -1,11 +1,7 @@
 import React from 'react';
 
-const Hamburger = props => {
-  return (
-    <div>
-      
-    </div>
-  );
-};
+const Hamburger = () => (
+  <></>
+);
 
 export default Hamburger;
