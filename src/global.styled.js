@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
+  :root {
+    --barlow: 'Barlow', sans-serif;
+    --fraunces: 'Fraunces', serif;
+  }
+
   *,
   *::after,
   *::before {
