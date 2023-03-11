@@ -5,7 +5,7 @@ import SunnySideLogo from './utils/SunnySideLogo';
 const App = () => (
   <>
     <AgencyHeader>
-     <SunnySideLogo />
+     {/* <SunnySideLogo /> */}
       <svg 
         width="24" 
         height="18"
