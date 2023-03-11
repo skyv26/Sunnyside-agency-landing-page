@@ -1,34 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from 'react';
+import AgencyHeader from './components/header.styled';
+import SunnySideLogo from './utils/SunnySideLogo';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => (
+  <>
+    <AgencyHeader>
+      <SunnySideLogo />
+      <svg
+        width="24"
+        height="18"
+        role="img"
+        aria-labelledby="title desc"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title id="title">Hamburger Icon</title>
+        <desc id="desc">Hamburger</desc>
+        <path
+          d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
+          fill="#FFF"
+          fillRule="evenodd"
+        />
+      </svg>
+    </AgencyHeader>
+  </>
+);
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
-
-export default App
+export default App;
