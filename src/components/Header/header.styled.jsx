@@ -10,6 +10,7 @@ export const AgencyHeader = styled.header`
   left: 0;
   position: fixed;
   background-color: rgb(8 190 255);
+  z-index: 10;
 `;
 
 export const MobileMenu = styled.nav`
