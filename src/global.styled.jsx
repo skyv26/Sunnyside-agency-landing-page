@@ -23,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     width: 100%;
     min-height: 100%;
+    background-color: rgb(10, 182, 255);
   }
 
   a {
