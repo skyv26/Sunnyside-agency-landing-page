@@ -3,10 +3,13 @@ import styled from 'styled-components';
 export const AgencyHeader = styled.header`
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: space-between;
   padding: 3.25rem 2rem;
-  /* background-color: rgb(10 182 255); */
-  position: relative;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgb(8 190 255);
 `;
 
 export const MobileMenu = styled.nav`
