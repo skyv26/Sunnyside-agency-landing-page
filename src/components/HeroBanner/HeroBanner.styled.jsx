@@ -12,7 +12,7 @@ export const HeroContainer = styled.div`
   background-size: cover;
   text-align: center;
   position: relative;
-  `;
+`;
 
 export const MainDisplayText = styled.h1`
   font-family: var(--fraunces);
