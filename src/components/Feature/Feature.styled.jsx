@@ -5,10 +5,6 @@ export const FeatureSectionContainer = styled.div`
   background-color: white;
 `;
 
-export const FeatureCard = styled(FeatureSectionContainer)`
-  width: 100%;
-`;
-
 export const FeatureCardInner = styled(FeatureSectionContainer)`
   width: 100%;
   padding: 7rem 3.25rem;
@@ -25,6 +21,47 @@ export const FeatureCardImage = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: top;
+`;
+
+export const FeatureCard = styled(FeatureSectionContainer)`
+  width: 100%;
+  
+  &:nth-child(3),
+  &:nth-child(4) {
+    position: relative;
+    height: max-content;
+    margin-top: -0.75rem;
+
+    & ${FeatureCardImage} {
+      display: inline-block;
+      height: 100%;
+    }
+
+    & ${FeatureCardInner} {
+      position: absolute;
+      padding: 7rem 3.25rem;
+      width: 100%;
+      gap: 3rem;
+      height: 100%;
+      background-color: transparent;
+      justify-content: flex-end;
+      bottom: 0;
+
+      & p {
+        opacity: 0.7;
+        
+        @media (max-width: 360px) {
+          &:first-child {
+            font-size: 2.6rem;
+          }
+
+          &:last-child {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
 `;
 
 export const FeatureCardHeading = styled.p`
