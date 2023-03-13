@@ -4,6 +4,7 @@ import HeroBanner from './components/HeroBanner/HeroBanner';
 import Feature from './components/Feature/Feature';
 import Testimonial from './components/Testimonial/Testimonial';
 import Gallery from './components/Interactive/Gallery';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   <>
@@ -12,6 +13,7 @@ const App = () => (
     <Feature />
     <Testimonial />
     <Gallery />
+    <Footer />
   </>
 );
 
