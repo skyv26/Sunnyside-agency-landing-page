@@ -13,9 +13,9 @@ export const Heading = styled.h2`
   text-transform: uppercase;
   font-family: var(--fraunces);
   font-weight: 900;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   font-size: 1.75rem;
-  color: hsl(232, 10%, 55%);
+  color: hsl(210, 4%, 67%);
 `;
 
 export const Card = styled.div`
