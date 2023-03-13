@@ -27,6 +27,28 @@ const Testimonial = () => (
         <Designation>Marketing Director</Designation>
       </Name>
     </Card>
+    <Card>
+      <Image src={Thomas} alt="Emily R." />
+      <Feedback>
+        Sunnyside&apos;s enthusiasm coupled with their keen interest in our
+        brand&apos;s success made it a satisfying and enjoyable experience.
+      </Feedback>
+      <Name>
+        Thomas S.
+        <Designation>Chief Operating Officer</Designation>
+      </Name>
+    </Card>
+    <Card>
+      <Image src={Jennie} alt="Emily R." />
+      <Feedback>
+        Incredible end result! Our sales increased over 400%
+        when we worked with Sunnyside. Highly recommended!
+      </Feedback>
+      <Name>
+        Jennie F.
+        <Designation>Business Owner</Designation>
+      </Name>
+    </Card>
   </TestimonialContainer>
 );
 export default Testimonial;
