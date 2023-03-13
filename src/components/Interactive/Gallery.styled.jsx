@@ -8,4 +8,7 @@ export const GalleryContainer = styled.div`
 
 export const Image = styled.img`
   display: inline-block;
+  object-fit: contain;
+  width: calc(100%/2);
+  object-position: top;
 `;

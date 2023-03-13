@@ -1,6 +1,6 @@
 import React from 'react';
 import { GalleryContainer, Image } from './Gallery.styled';
-import GalleryMilkBottle from '../../assets/images/mobile/image-gallery-milkbottle.jpg';
+import GalleryMilkBottle from '../../assets/images/mobile/image-gallery-milkbottles.jpg';
 import GalleryOrange from '../../assets/images/mobile/image-gallery-orange.jpg';
 import GalleryCone from '../../assets/images/mobile/image-gallery-cone.jpg';
 import GallerySugarCubes from '../../assets/images/mobile/image-gallery-sugar-cubes.jpg';
