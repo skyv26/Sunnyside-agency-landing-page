@@ -54,5 +54,4 @@ export const Designation = styled.span`
   font-family: var(--barlow);
   font-weight: 600;
   color: hsl(232, 10%, 55%);
-
 `;
