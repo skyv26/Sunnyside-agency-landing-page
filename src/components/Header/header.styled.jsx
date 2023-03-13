@@ -63,7 +63,7 @@ export const Menu = styled.li`
   text-transform: capitalize;
   border-radius: 4rem;
 
-  &:hover {
+  &:last-child {
     font-size: 2rem;
     /* font-family: 700; */
     text-transform: uppercase;
