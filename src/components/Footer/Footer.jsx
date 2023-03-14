@@ -22,7 +22,7 @@ const Footer = () => (
         <Menu href="">Projects</Menu>
       </List>
     </NavigationList>
-    <SocailMediaList>
+    <SocailMediaList class="social-container">
       <List>
         <Menu href="" className="fa-brands fa-square-facebook" />
       </List>

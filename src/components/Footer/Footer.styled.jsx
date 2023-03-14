@@ -7,18 +7,17 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 4rem 7rem 4rem;
-`;
+  padding: 8rem 4rem 10rem 4rem;
 
-export const Icon = styled.i`
-  font-size: 3rem;
+  & svg {
+    transform: scale(1.5);
+  }
 `;
 
 export const Menu = styled.a`
   font-size: 1.75rem;
   font-family: var(--barlow);
   font-weight: 600;
-  color: hsl(168, 34%, 41%);
   width: 100%;
 `;
 
@@ -27,14 +26,31 @@ export const SocailMediaList = styled.ul`
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 10rem;
   gap: 2.75rem;
+
+  & ${Menu} {
+    color: hsl(167, 40%, 24%);
+    font-size: 2.6rem;
+    &:hover {
+      color: white;
+    }
+  }
 `;
 
 export const NavigationList = styled(SocailMediaList)`
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 7rem;
   gap: 0;
+
+  & ${Menu} {
+    color: hsl(168, 34%, 41%);
+    font-size: 1.75rem;
+   
+    &:hover {
+      color: white;
+    }
+  }
 `;
 
 export const List = styled.li`
