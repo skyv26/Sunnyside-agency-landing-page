@@ -26,6 +26,7 @@ const SunnySideLogo = (props) => {
     </>
   );
 };
+
 SunnySideLogo.propTypes = {
   footer: PropTypes.bool,
 };

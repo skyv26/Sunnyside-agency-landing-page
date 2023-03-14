@@ -6,19 +6,16 @@ import {
   MenuList,
   Menu,
 } from './header.styled';
+import Hamburger from '../../utils/Hamburger';
 import SunnySideLogo from '../../utils/SunnySideLogo';
 
 const Header = () => {
   const [mobileMenuStatus, mobileMenuStatusChange] = useState(false);
 
-  const hamburgerMenuHandler = () => {
-    mobileMenuStatusChange((prev) => !prev);
-  };
-
   return (
     <AgencyHeader>
       <SunnySideLogo />
-      <svg
+      {/* <svg
         width="24"
         height="18"
         role="img"
@@ -33,7 +30,8 @@ const Header = () => {
           fill="#FFF"
           fillRule="evenodd"
         />
-      </svg>
+      </svg> */}
+      <Hamburger mobileMenuStatusChange={mobileMenuStatusChange} />
       {
         mobileMenuStatus && (
           <MobileMenu>
