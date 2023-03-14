@@ -13,30 +13,27 @@ const Footer = () => (
     <SunnySideLogo footer />
     <NavigationList>
       <List>
-        <Menu>About</Menu>
+        <Menu href="">About</Menu>
       </List>
       <List>
-        <Menu>Services</Menu>
+        <Menu href="">Services</Menu>
       </List>
       <List>
-        <Menu>Projects</Menu>
-      </List>
-      <List>
-        <Menu />
+        <Menu href="">Projects</Menu>
       </List>
     </NavigationList>
     <SocailMediaList>
       <List>
-        <Menu className="fa-brands fa-square-facebook" />
+        <Menu href="" className="fa-brands fa-square-facebook" />
       </List>
       <List>
-        <Menu className="fa-brands fa-instagram" />
+        <Menu href="" className="fa-brands fa-instagram" />
       </List>
       <List>
-        <Menu className="fa-brands fa-twitter" />
+        <Menu href="" className="fa-brands fa-twitter" />
       </List>
       <List>
-        <Menu className="fa-brands fa-pinterest" />
+        <Menu href="" className="fa-brands fa-pinterest" />
       </List>
     </SocailMediaList>
   </FooterContainer>
