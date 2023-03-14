@@ -29,6 +29,11 @@ export const MobileMenu = styled.nav`
     height: 22rem;
     overflow-y: scroll;
   }
+
+  @media (min-width: 24em) and (max-height: 53em) {
+    height: 23rem;
+    overflow-y: scroll;
+  }
 `;
 
 export const MenuList = styled.ul`
