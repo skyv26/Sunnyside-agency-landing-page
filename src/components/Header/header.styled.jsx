@@ -9,7 +9,7 @@ export const AgencyHeader = styled.header`
   top: 0;
   left: 0;
   position: fixed;
-  background-color: rgb(8 190 255);
+  background-color: rgb(50, 192, 255);
   z-index: 10;
 `;
 
