@@ -5,7 +5,7 @@ export const AgencyHeader = styled.header`
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  padding: 3.25rem 2rem;
+  padding: 3rem 2rem;
   top: 0;
   left: 0;
   position: fixed;
@@ -24,6 +24,11 @@ export const MobileMenu = styled.nav`
   width: calc(100% - 4rem);
   clip-path: polygon(0% 8%, 93% 8%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 100%);
   background-color: #ffffff;
+
+  @media (min-width: 38em) and (max-height: 20em) {
+    height: 22rem;
+    overflow-y: scroll;
+  }
 `;
 
 export const MenuList = styled.ul`
@@ -33,6 +38,10 @@ export const MenuList = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  
+  @media (min-width: 38em) and (max-height: 20em) {
+    padding: 8% 8% 2% 8%;
+  }
 `;
 
 export const MenuLink = styled.a`
@@ -47,6 +56,7 @@ export const MenuLink = styled.a`
     /* font-family: 700; */
     text-transform: uppercase;
     font-family: var(--fraunces);
+    padding: 1.25rem;
   }
 `;
 
@@ -62,6 +72,11 @@ export const Menu = styled.li`
   width: 60%;
   text-transform: capitalize;
   border-radius: 4rem;
+  
+  @media (max-width: 20em) {
+    font-size: 1.75rem;
+    height: 4rem;
+  }
 
   &:last-child {
     font-size: 2rem;
@@ -69,5 +84,9 @@ export const Menu = styled.li`
     text-transform: uppercase;
     font-family: var(--fraunces);
     background-color: hsl(51, 100%, 49%);
+
+    @media (max-width: 22em) {
+      font-size: 1.4rem;
+    }
   }
 `;
