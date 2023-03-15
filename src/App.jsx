@@ -1,27 +1,19 @@
 import React from 'react';
-import AgencyHeader from './components/header.styled';
-import SunnySideLogo from './utils/SunnySideLogo';
+import Header from './components/Header/Header';
+import HeroBanner from './components/HeroBanner/HeroBanner';
+import Feature from './components/Feature/Feature';
+import Testimonial from './components/Testimonial/Testimonial';
+import Gallery from './components/Interactive/Gallery';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   <>
-    <AgencyHeader>
-      <SunnySideLogo />
-      <svg
-        width="24"
-        height="18"
-        role="img"
-        aria-labelledby="title desc"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title id="title">Hamburger Icon</title>
-        <desc id="desc">Hamburger</desc>
-        <path
-          d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
-          fill="#FFF"
-          fillRule="evenodd"
-        />
-      </svg>
-    </AgencyHeader>
+    <Header />
+    <HeroBanner />
+    <Feature />
+    <Testimonial />
+    <Gallery />
+    <Footer />
   </>
 );
 
