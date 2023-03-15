@@ -25,6 +25,14 @@ export const MobileMenu = styled.nav`
   clip-path: polygon(0% 8%, 93% 8%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 100%);
   background-color: #ffffff;
 
+  @media (min-width: 48em) {
+    top: 100%;
+    left: 100%;
+    right: 0;
+    transform: translate(calc(-100% - 2rem), 0);
+    width: 40%;
+  }
+
   @media (orientation: landscape) {
     height: 70vh;
     overflow-y: scroll;
