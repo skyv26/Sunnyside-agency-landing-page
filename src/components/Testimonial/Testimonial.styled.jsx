@@ -7,6 +7,18 @@ export const TestimonialContainer = styled.div`
   align-items: center;
   padding: 8vh 8vw;
   gap: 6rem;
+
+  @media (min-width: 48em) {
+    padding: 10vh 8vw;
+  }
+`;
+
+export const TestimonialCardContainer = styled(TestimonialContainer)`
+  padding: 0 0;
+
+  @media (min-width: 48em) {
+    flex-direction: row;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -31,6 +43,11 @@ export const Image = styled.img`
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
+
+  @media (min-width: 48em) {
+    width: 5rem;
+    height: 5rem;
+  }
 `;
 
 export const Feedback = styled.p`
@@ -39,6 +56,10 @@ export const Feedback = styled.p`
   font-weight: 600;
   color: hsl(212, 27%, 19%);
   line-height: 1.65;
+
+  @media (min-width: 48em) {
+    font-size: 1rem;
+  }
 `;
 
 export const Name = styled(Feedback)`
@@ -46,6 +67,10 @@ export const Name = styled(Feedback)`
   font-family: var(--fraunces);
   font-weight: 900;
   color: hsl(212, 27%, 19%);
+
+  @media (min-width: 48em) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const Designation = styled.span`
@@ -54,4 +79,8 @@ export const Designation = styled.span`
   font-family: var(--barlow);
   font-weight: 600;
   color: hsl(232, 10%, 55%);
+
+  @media (min-width: 48em) {
+    font-size: 1rem;
+  }
 `;
