@@ -11,6 +11,13 @@ export const FooterContainer = styled.footer`
 
   & svg {
     transform: scale(1.5);
+    @media (min-width: 48em) {
+      transform: scale(1);
+    }
+  }
+
+  @media (min-width: 48em) {
+    padding: 7rem 4rem 6rem 4rem;
   }
 `;
 
@@ -36,6 +43,15 @@ export const SocailMediaList = styled.ul`
       color: white;
     }
   }
+
+  @media (min-width: 48em) {
+    gap: 1.75rem;
+    margin-top: 8rem;
+
+    & ${Menu} {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const NavigationList = styled(SocailMediaList)`
@@ -49,6 +65,16 @@ export const NavigationList = styled(SocailMediaList)`
    
     &:hover {
       color: white;
+    }
+  }
+
+  @media (min-width: 48em) {
+    gap: 3rem;
+    margin-top: 4rem;
+    justify-content: center;
+
+    & ${Menu} {
+      font-size: 2rem;
     }
   }
 `;
