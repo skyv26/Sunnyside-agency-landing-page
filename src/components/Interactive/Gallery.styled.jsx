@@ -11,4 +11,10 @@ export const Image = styled.img`
   object-fit: contain;
   width: calc(100%/2);
   object-position: top;
+
+
+  @media (min-width: 48em) {
+    width: calc(100%/4);
+  
+  }
 `;
