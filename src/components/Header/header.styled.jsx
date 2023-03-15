@@ -25,14 +25,26 @@ export const MobileMenu = styled.nav`
   clip-path: polygon(0% 8%, 93% 8%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 100%);
   background-color: #ffffff;
 
-  @media (min-width: 38em) and (max-height: 20em) {
-    height: 22rem;
+  @media (orientation: landscape) {
+    height: 70vh;
     overflow-y: scroll;
-  }
+    clip-path: polygon(0% 12%, 95% 12%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 100%);
 
-  @media (min-width: 24em) and (max-height: 53em) {
-    height: 23rem;
-    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0.6rem;
+    }
+    
+    &::-webkit-scrollbar-track {
+      box-shadow:inset 0 0 6px rgba(0,0,0,0.3); 
+      border-radius:5px;
+      margin-top: 10vh;
+     }
+   
+     &::-webkit-scrollbar-thumb {
+      border-radius:5px;
+      box-shadow: inset 0 0 6px rgb(25, 98, 130); 
+      margin-top: 10vh;
+     }
   }
 `;
 
