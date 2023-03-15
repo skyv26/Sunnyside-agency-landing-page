@@ -26,6 +26,10 @@ export const MainDisplayText = styled.h1`
   @media (min-width: 23em) {
     font-size: 4.25rem;
   }
+  
+  @media (min-width: 48em) {
+    padding-top: 16rem;
+  }
 `;
 
 export const ArrowButton = styled.img`
