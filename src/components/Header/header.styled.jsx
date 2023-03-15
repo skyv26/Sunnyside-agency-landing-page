@@ -11,6 +11,15 @@ export const AgencyHeader = styled.header`
   position: fixed;
   background-color: rgb(50, 192, 255);
   z-index: 10;
+
+  @media (min-width: 86em) {
+    padding: 3.2rem 3.25rem;
+
+    & svg {
+      display: inline-block;
+      transform: scale(1.375) translate(2.2rem, 0);
+    }
+  }
 `;
 
 export const MobileMenu = styled.nav`
@@ -24,6 +33,14 @@ export const MobileMenu = styled.nav`
   width: calc(100% - 4rem);
   clip-path: polygon(0% 8%, 93% 8%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 100%);
   background-color: #ffffff;
+
+  @media (min-width: 48em) {
+    top: 100%;
+    left: 100%;
+    right: 0;
+    transform: translate(calc(-100% - 2rem), 0);
+    width: 40%;
+  }
 
   @media (orientation: landscape) {
     height: 70vh;
@@ -46,6 +63,20 @@ export const MobileMenu = styled.nav`
       margin-top: 10vh;
      }
   }
+
+  @media (min-width: 86em) and (orientation: landscape) {
+    position: unset;
+    top: 0;
+    right: 0;
+    height: auto;
+    display: inline-block;
+    transform: translate(0, 0);
+    width: auto;
+    clip-path: none;
+    overflow: unset;
+    background-color: transparent;
+  }
+
 `;
 
 export const MenuList = styled.ul`
@@ -58,6 +89,13 @@ export const MenuList = styled.ul`
   
   @media (min-width: 38em) and (max-height: 20em) {
     padding: 8% 8% 2% 8%;
+  }
+
+  @media (min-width: 86em) {
+    flex-direction: row;
+    padding: 0;
+    gap: 5.25rem;
+    justify-content: space-between;
   }
 `;
 
@@ -74,6 +112,10 @@ export const MenuLink = styled.a`
     text-transform: uppercase;
     font-family: var(--fraunces);
     padding: 1.25rem;
+  }
+
+  @media (min-width: 86em) {
+    padding: 0;
   }
 `;
 
@@ -95,6 +137,14 @@ export const Menu = styled.li`
     height: 4rem;
   }
 
+  @media (min-width: 86rem) {
+    font-size: 1.72rem;
+    height: auto;
+    /* padding: 2rem 2.8rem; */
+    width: max-content;
+    color: white;
+  }
+
   &:last-child {
     font-size: 2rem;
     /* font-family: 700; */
@@ -104,6 +154,13 @@ export const Menu = styled.li`
 
     @media (max-width: 22em) {
       font-size: 1.4rem;
+    }
+
+    @media (min-width: 86em) {
+     font-size: 1.47rem;
+     padding: 2rem 2.8rem;
+     background-color: white;
+     color: hsl(212, 27%, 19%);
     }
   }
 `;

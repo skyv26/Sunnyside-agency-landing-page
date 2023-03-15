@@ -12,6 +12,10 @@ export const HeroContainer = styled.div`
   background-size: cover;
   text-align: center;
   position: relative;
+
+  @media (min-width: 48em) {
+    background-position: center;
+  }
 `;
 
 export const MainDisplayText = styled.h1`
@@ -25,6 +29,10 @@ export const MainDisplayText = styled.h1`
 
   @media (min-width: 23em) {
     font-size: 4.25rem;
+  }
+  
+  @media (min-width: 48em) {
+    padding-top: 16rem;
   }
 `;
 

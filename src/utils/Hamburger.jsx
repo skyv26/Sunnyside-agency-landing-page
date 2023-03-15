@@ -7,6 +7,10 @@ const Bar = styled.span`
   height: 2.5px;
   width: 100%;
   background-color: white;
+
+  @media (min-width: 86em) {
+    display: none;
+  }
 `;
 
 const Container = styled.p`

@@ -7,11 +7,10 @@ import {
   FeatureCardInner,
   FeatureCardDesc,
   FeatureCardBtn,
+  ImageFeatureCardContainer,
 } from './Feature.styled';
 import EggImage from '../../assets/images/mobile/image-transform.jpg';
 import GlassImage from '../../assets/images/mobile/image-stand-out.jpg';
-import CherryImage from '../../assets/images/mobile/image-graphic-design.jpg';
-import OrangeImage from '../../assets/images/mobile/image-photography.jpg';
 
 const Feature = () => (
   <FeatureSectionContainer>
@@ -37,26 +36,26 @@ const Feature = () => (
         <FeatureCardBtn className="stand-out">Learn more</FeatureCardBtn>
       </FeatureCardInner>
     </FeatureCard>
-    <FeatureCard className="ImageCard">
-      <FeatureCardImage src={CherryImage} alt="" />
-      <FeatureCardInner>
-        <FeatureCardHeading>Graphic design</FeatureCardHeading>
-        <FeatureCardDesc>
-          Great design makes you memorable. We deliver artwork that underscores your
-          brand message and captures potential clients&apos; attention.
-        </FeatureCardDesc>
-      </FeatureCardInner>
-    </FeatureCard>
-    <FeatureCard className="ImageCard">
-      <FeatureCardImage src={OrangeImage} alt="" />
-      <FeatureCardInner>
-        <FeatureCardHeading>Photography</FeatureCardHeading>
-        <FeatureCardDesc>
-          Increase your credibility by getting the most stunning, high-quality
-          photos that improve your business image.
-        </FeatureCardDesc>
-      </FeatureCardInner>
-    </FeatureCard>
+    <ImageFeatureCardContainer>
+      <FeatureCard className="ImageCard">
+        <FeatureCardInner>
+          <FeatureCardHeading>Graphic design</FeatureCardHeading>
+          <FeatureCardDesc>
+            Great design makes you memorable. We deliver artwork that underscores your
+            brand message and captures potential clients&apos; attention.
+          </FeatureCardDesc>
+        </FeatureCardInner>
+      </FeatureCard>
+      <FeatureCard className="ImageCard">
+        <FeatureCardInner>
+          <FeatureCardHeading>Photography</FeatureCardHeading>
+          <FeatureCardDesc>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </FeatureCardDesc>
+        </FeatureCardInner>
+      </FeatureCard>
+    </ImageFeatureCardContainer>
   </FeatureSectionContainer>
 );
 
