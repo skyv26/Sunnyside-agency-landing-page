@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import MobileHeaderImage from '../../assets/images/mobile/image-header.jpg';
+import DesktopHeaderImage from '../../assets/images/desktop/image-header.jpg';
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -15,6 +16,14 @@ export const HeroContainer = styled.div`
 
   @media (min-width: 48em) {
     background-position: center;
+  }
+
+  @media (min-width: 86em) {
+    background: url(${DesktopHeaderImage});
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
   }
 `;
 
@@ -33,6 +42,13 @@ export const MainDisplayText = styled.h1`
   
   @media (min-width: 48em) {
     padding-top: 16rem;
+  }
+  
+  @media (min-width: 86em) {
+    font-weight: 900;
+    padding-top: 19.6rem;
+    font-size: 5.675rem;
+    letter-spacing: 1rem;
   }
 `;
 
