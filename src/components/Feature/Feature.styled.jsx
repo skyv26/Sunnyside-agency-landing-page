@@ -26,6 +26,16 @@ export const FeatureCardInner = styled(FeatureSectionContainer)`
     text-align: left;
     gap: 2rem;
   }
+
+  @media (min-width: 86em) {
+    width: 50%;
+    padding: 0 15rem;
+    margin: auto;
+    /* margin-top: 0; */
+    text-align: left;
+    gap: 2rem;
+  }
+
 `;
 
 export const FeatureCardImage = styled.img`
@@ -103,6 +113,14 @@ export const FeatureCard = styled(FeatureSectionContainer)`
         background-position: center;
         height: 32rem;
       }
+
+      @media (min-width: 86em) {
+        height: 60rem;
+
+        &:last-child {
+          height: 60rem;
+        }
+      }
     }
 
     & ${FeatureCardInner} {
@@ -124,6 +142,10 @@ export const FeatureCard = styled(FeatureSectionContainer)`
         text-align: center;
         padding: 0 9rem 3rem 9rem;
         gap: 2rem;
+      }
+
+      @media (min-width: 86em) {
+        padding: 0 16.75rem 6rem 16.75rem;
       }
 
       & p {
@@ -148,6 +170,16 @@ export const FeatureCard = styled(FeatureSectionContainer)`
             font-size: 1.5rem;
           }
         }
+
+        @media (min-width: 86em) {
+          &:first-child {
+            font-size: 3.1rem;
+          }
+
+          &:last-child {
+            font-size: 1.7rem;
+          }
+        }
       }
     }
   }
@@ -162,6 +194,11 @@ export const FeatureCardHeading = styled.p`
   @media (min-width: 48em) {
     font-size: 2.1rem;
   }
+
+  @media (min-width: 86em) {
+    font-weight: 700;
+    font-size: 3.775rem;
+  }
 `;
 
 export const FeatureCardDesc = styled.p`
@@ -174,6 +211,11 @@ export const FeatureCardDesc = styled.p`
   @media (min-width: 48em) {
     font-size: 0.9rem;
   }
+
+  @media (min-width: 86em) {
+    font-size: 1.6rem;
+  }
+
 `;
 
 export const FeatureCardBtn = styled.a`
@@ -195,6 +237,11 @@ export const FeatureCardBtn = styled.a`
     text-align: left;
     margin: 0;
   }
+
+  @media (min-width: 86em) {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
   
   &::before {
     content: '';
@@ -211,6 +258,10 @@ export const FeatureCardBtn = styled.a`
 
     @media (min-width: 48em) {
       height: .4rem;
+    }
+
+    @media (min-width: 86em) {
+      height: .75rem;
     }
   }
   
