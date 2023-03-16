@@ -11,6 +11,11 @@ export const TestimonialContainer = styled.div`
   @media (min-width: 48em) {
     padding: 10vh 8vw;
   }
+
+  @media (min-width: 64em) {
+    padding: 16vh 8vw;
+    gap: 8rem;
+  }
 `;
 
 export const TestimonialCardContainer = styled(TestimonialContainer)`
@@ -28,6 +33,11 @@ export const Heading = styled.h2`
   letter-spacing: 3px;
   font-size: 1.75rem;
   color: hsl(210, 4%, 67%);
+
+  @media (min-width: 64em) {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+  }
 `;
 
 export const Card = styled.div`
@@ -48,6 +58,16 @@ export const Image = styled.img`
     width: 5rem;
     height: 5rem;
   }
+
+  @media (min-width: 64em) {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  @media (min-width: 80em) {
+    width: 7rem;
+    height: 7rem;
+  }
 `;
 
 export const Feedback = styled.p`
@@ -60,6 +80,18 @@ export const Feedback = styled.p`
   @media (min-width: 48em) {
     font-size: 1rem;
   }
+
+  @media (min-width: 64em) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 80em) {
+    font-size: 1.6rem;
+  }
+
+  @media (min-width: 86em) {
+    font-size: 1.9rem;
+  }
 `;
 
 export const Name = styled(Feedback)`
@@ -70,6 +102,14 @@ export const Name = styled(Feedback)`
 
   @media (min-width: 48em) {
     font-size: 1.25rem;
+  }
+
+  @media (min-width: 64em) {
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: 80em) {
+    font-size: 1.9rem;
   }
 `;
 
@@ -82,5 +122,13 @@ export const Designation = styled.span`
 
   @media (min-width: 48em) {
     font-size: 1rem;
+  }
+
+  @media (min-width: 64em) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 80em) {
+    font-size: 1.4rem;
   }
 `;
