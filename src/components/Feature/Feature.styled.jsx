@@ -27,11 +27,10 @@ export const FeatureCardInner = styled(FeatureSectionContainer)`
     gap: 2rem;
   }
 
-  @media (min-width: 86em) {
+  @media (min-width: 80em) {
     width: 50%;
     padding: 0 15rem;
     margin: auto;
-    /* margin-top: 0; */
     text-align: left;
     gap: 2rem;
   }
@@ -114,7 +113,15 @@ export const FeatureCard = styled(FeatureSectionContainer)`
         height: 32rem;
       }
 
-      @media (min-width: 86em) {
+      @media (min-width: 64em) {
+        height: 50rem;
+
+        &:last-child {
+          height: 50rem;
+        }
+      }
+
+      @media (min-width: 80em) {
         height: 60rem;
 
         &:last-child {
@@ -144,6 +151,10 @@ export const FeatureCard = styled(FeatureSectionContainer)`
         gap: 2rem;
       }
 
+      @media (min-width: 80em) {
+        padding: 0 14rem 6rem 14rem;
+      }
+
       @media (min-width: 86em) {
         padding: 0 16.75rem 6rem 16.75rem;
       }
@@ -171,7 +182,7 @@ export const FeatureCard = styled(FeatureSectionContainer)`
           }
         }
 
-        @media (min-width: 86em) {
+        @media (min-width: 80em) {
           &:first-child {
             font-size: 3.1rem;
           }
@@ -195,7 +206,7 @@ export const FeatureCardHeading = styled.p`
     font-size: 2.1rem;
   }
 
-  @media (min-width: 86em) {
+  @media (min-width: 64em) {
     font-weight: 700;
     font-size: 3.775rem;
   }
@@ -212,10 +223,13 @@ export const FeatureCardDesc = styled.p`
     font-size: 0.9rem;
   }
 
-  @media (min-width: 86em) {
-    font-size: 1.6rem;
+  @media (min-width: 64em) {
+    font-size: 1.4rem;
   }
 
+  @media (min-width: 80em) {
+    font-size: 1.6rem;
+  }
 `;
 
 export const FeatureCardBtn = styled.a`
@@ -238,7 +252,12 @@ export const FeatureCardBtn = styled.a`
     margin: 0;
   }
 
-  @media (min-width: 86em) {
+  @media (min-width: 64em) {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: 80em) {
     font-size: 1.5rem;
     letter-spacing: 1px;
   }
@@ -260,7 +279,11 @@ export const FeatureCardBtn = styled.a`
       height: .4rem;
     }
 
-    @media (min-width: 86em) {
+    @media (min-width: 64em) {
+      height: .6rem;
+    }
+
+    @media (min-width: 80em) {
       height: .75rem;
     }
   }

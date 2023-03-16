@@ -52,7 +52,7 @@ export const MainDisplayText = styled.h1`
     letter-spacing: 1rem;
   }
 
-  @media (min-width: 86em) {
+  @media (min-width: 80em) {
     font-weight: 900;
     padding-top: 19.6rem;
     font-size: 5.675rem;
