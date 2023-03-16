@@ -171,10 +171,15 @@ export const Menu = styled.li`
     height: auto;
     width: max-content;
     color: white;
+    
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   @media (min-width: 86rem) {
     font-size: 1.8rem;
+
   }
 
   &:last-child {
@@ -193,6 +198,11 @@ export const Menu = styled.li`
      padding: 1.75rem 2.25rem;
      background-color: white;
      color: hsl(212, 27%, 19%);
+
+     &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      color: white;
+     }
     }
 
     @media (min-width: 86em) {
