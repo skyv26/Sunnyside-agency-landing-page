@@ -20,6 +20,7 @@ export const HeroContainer = styled.div`
 
   @media (min-width: 86em) {
     background: url(${DesktopHeaderImage});
+    min-height: 100%;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
