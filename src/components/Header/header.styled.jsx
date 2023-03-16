@@ -12,6 +12,15 @@ export const AgencyHeader = styled.header`
   background-color: rgb(50, 192, 255);
   z-index: 10;
 
+  @media (min-width: 67em) {
+    padding: 2rem 2.75rem;
+
+    & svg {
+      display: inline-block;
+      transform: scale(1) translate(0, 0);
+    }
+  }
+
   @media (min-width: 86em) {
     padding: 3.2rem 3.25rem;
 
@@ -64,6 +73,19 @@ export const MobileMenu = styled.nav`
      }
   }
 
+  @media (min-width: 67em) {
+    position: unset;
+    top: 0;
+    right: 0;
+    height: auto;
+    display: inline-block;
+    transform: translate(0, 0);
+    width: auto;
+    clip-path: none;
+    overflow: unset;
+    background-color: transparent;
+  }
+
   @media (min-width: 86em) and (orientation: landscape) {
     position: unset;
     top: 0;
@@ -90,6 +112,13 @@ export const MenuList = styled.ul`
   @media (min-width: 38em) and (max-height: 20em) {
     padding: 8% 8% 2% 8%;
   }
+  
+  @media (min-width: 67em) {
+    flex-direction: row;
+    padding: 0;
+    gap: 4rem;
+    justify-content: space-between;
+  }
 
   @media (min-width: 86em) {
     flex-direction: row;
@@ -114,7 +143,7 @@ export const MenuLink = styled.a`
     padding: 1.25rem;
   }
 
-  @media (min-width: 86em) {
+  @media (min-width: 67em) {
     padding: 0;
   }
 `;
@@ -137,12 +166,15 @@ export const Menu = styled.li`
     height: 4rem;
   }
 
-  @media (min-width: 86rem) {
+  @media (min-width: 67rem) {
     font-size: 1.8rem;
     height: auto;
-    /* padding: 2rem 2.8rem; */
     width: max-content;
     color: white;
+  }
+
+  @media (min-width: 86rem) {
+    font-size: 1.8rem;
   }
 
   &:last-child {
@@ -156,11 +188,16 @@ export const Menu = styled.li`
       font-size: 1.4rem;
     }
 
+    @media (min-width: 67em) {
+     font-size: 1.4rem;
+     padding: 1.75rem 2.25rem;
+     background-color: white;
+     color: hsl(212, 27%, 19%);
+    }
+
     @media (min-width: 86em) {
      font-size: 1.47rem;
      padding: 2rem 2.8rem;
-     background-color: white;
-     color: hsl(212, 27%, 19%);
     }
   }
 `;
