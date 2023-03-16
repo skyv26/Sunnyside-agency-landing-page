@@ -43,6 +43,10 @@ export const MobileMenu = styled.nav`
   clip-path: polygon(0% 8%, 93% 8%, 100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 100%);
   background-color: #ffffff;
 
+  &.desktop-menu {
+    display: none;
+  }
+
   @media (min-width: 48em) {
     top: 100%;
     left: 100%;
@@ -84,6 +88,14 @@ export const MobileMenu = styled.nav`
     clip-path: none;
     overflow: unset;
     background-color: transparent;
+
+    &.desktop-menu {
+      display: flex;
+    }
+
+    &.mobile-menu {
+      display: none;
+    }
   }
 
   @media (min-width: 86em) and (orientation: landscape) {
@@ -97,6 +109,10 @@ export const MobileMenu = styled.nav`
     clip-path: none;
     overflow: unset;
     background-color: transparent;
+
+    &.mobile-menu {
+      display: none;
+    }
   }
 
 `;

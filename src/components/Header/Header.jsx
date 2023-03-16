@@ -16,7 +16,7 @@ const Header = () => {
     <AgencyHeader>
       <SunnySideLogo />
       <Hamburger mobileMenuStatusChange={mobileMenuStatusChange} />
-      <MobileMenu>
+      <MobileMenu className="desktop-menu">
         <MenuList>
           <Menu>about</Menu>
           <Menu>services</Menu>
@@ -26,7 +26,7 @@ const Header = () => {
       </MobileMenu>
       {
         mobileMenuStatus && (
-          <MobileMenu>
+          <MobileMenu className="mobile-menu">
             <MenuList>
               <Menu>about</Menu>
               <Menu>services</Menu>
