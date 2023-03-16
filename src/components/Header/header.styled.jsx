@@ -94,7 +94,7 @@ export const MenuList = styled.ul`
   @media (min-width: 86em) {
     flex-direction: row;
     padding: 0;
-    gap: 5.25rem;
+    gap: 4.9rem;
     justify-content: space-between;
   }
 `;
@@ -138,7 +138,7 @@ export const Menu = styled.li`
   }
 
   @media (min-width: 86rem) {
-    font-size: 1.72rem;
+    font-size: 1.8rem;
     height: auto;
     /* padding: 2rem 2.8rem; */
     width: max-content;
