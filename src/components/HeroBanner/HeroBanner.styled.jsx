@@ -18,7 +18,7 @@ export const HeroContainer = styled.div`
     background-position: center;
   }
 
-  @media (min-width: 86em) {
+  @media (min-width: 64em) {
     background: url(${DesktopHeaderImage});
     min-height: 100%;
     background-repeat: no-repeat;
@@ -45,6 +45,13 @@ export const MainDisplayText = styled.h1`
     padding-top: 16rem;
   }
   
+  @media (min-width: 64em) {
+    font-weight: 900;
+    padding-top: 14rem;
+    font-size: 3.6rem;
+    letter-spacing: 1rem;
+  }
+
   @media (min-width: 86em) {
     font-weight: 900;
     padding-top: 19.6rem;
@@ -69,5 +76,11 @@ export const ArrowButton = styled.img`
     100% {
       transform: translate(-50%, 5rem);
     }
+  }
+
+  @media (min-width: 64em) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;

@@ -8,7 +8,7 @@ const Bar = styled.span`
   width: 100%;
   background-color: white;
 
-  @media (min-width: 67em) {
+  @media (min-width: 64em) {
     display: none;
   }
 `;

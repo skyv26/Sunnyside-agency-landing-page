@@ -12,7 +12,7 @@ export const AgencyHeader = styled.header`
   background-color: rgb(50, 192, 255);
   z-index: 10;
 
-  @media (min-width: 67em) {
+  @media (min-width: 64em) {
     padding: 2rem 2.75rem;
 
     & svg {
@@ -73,7 +73,7 @@ export const MobileMenu = styled.nav`
      }
   }
 
-  @media (min-width: 67em) {
+  @media (min-width: 64em) {
     position: unset;
     top: 0;
     right: 0;
@@ -113,7 +113,7 @@ export const MenuList = styled.ul`
     padding: 8% 8% 2% 8%;
   }
   
-  @media (min-width: 67em) {
+  @media (min-width: 64em) {
     flex-direction: row;
     padding: 0;
     gap: 4rem;
@@ -143,7 +143,7 @@ export const MenuLink = styled.a`
     padding: 1.25rem;
   }
 
-  @media (min-width: 67em) {
+  @media (min-width: 64em) {
     padding: 0;
   }
 `;
@@ -166,7 +166,7 @@ export const Menu = styled.li`
     height: 4rem;
   }
 
-  @media (min-width: 67rem) {
+  @media (min-width: 64em) {
     font-size: 1.8rem;
     height: auto;
     width: max-content;
@@ -188,7 +188,7 @@ export const Menu = styled.li`
       font-size: 1.4rem;
     }
 
-    @media (min-width: 67em) {
+    @media (min-width: 64em) {
      font-size: 1.4rem;
      padding: 1.75rem 2.25rem;
      background-color: white;
